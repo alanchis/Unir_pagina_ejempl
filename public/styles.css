@@ -1,12 +1,12 @@
 :root{
-  --accent:#2c7a7b;
+  --accent:#7b2c52;
   --bg:#f7fafc;
   --card:#ffffff;
 }
 *{box-sizing:border-box}
 body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--bg);color:#1a202c}
 .container{max-width:900px;margin:0 auto;padding:1rem}
-.hero{background:linear-gradient(90deg,var(--accent),#48bb78);color:white;padding:2rem 0;text-align:center}
+.hero{background:linear-gradient(90deg,var(--accent),#513b9a);color:white;padding:2rem 0;text-align:center}
 .hero h1{margin:0;font-size:2rem}
 .hero span{font-weight:700}
 .services, .appointment{background:var(--card);padding:1rem;margin-top:1rem;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
