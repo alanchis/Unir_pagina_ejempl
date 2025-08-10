@@ -1,0 +1,21 @@
+:root{
+  --accent:#2c7a7b;
+  --bg:#f7fafc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--bg);color:#1a202c}
+.container{max-width:900px;margin:0 auto;padding:1rem}
+.hero{background:linear-gradient(90deg,var(--accent),#48bb78);color:white;padding:2rem 0;text-align:center}
+.hero h1{margin:0;font-size:2rem}
+.hero span{font-weight:700}
+.services, .appointment{background:var(--card);padding:1rem;margin-top:1rem;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
+.services ul{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+.services li{background:#edf2f7;padding:.5rem .75rem;border-radius:6px}
+label{display:block;margin-bottom:.5rem}
+input,select,textarea{width:100%;padding:.5rem;border:1px solid #e2e8f0;border-radius:6px;margin-top:.25rem}
+button{background:var(--accent);color:white;border:none;padding:.6rem 1rem;border-radius:6px;cursor:pointer}
+#appointmentsList{list-style:none;padding:0}
+#appointmentsList li{padding:.5rem;border-bottom:1px solid #eee}
+.footer{margin-top:1rem;padding:1rem 0;text-align:center;color:#4a5568}
+@media(min-width:700px){.services ul{gap:1rem}.services li{flex:1}}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clínica Veterinaria La Patita</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Clínica Veterinaria <span>La Patita</span></h1>
+      <p>Cuidados amorosos para tus mascotas — salud, vacunas y urgencias.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="services">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Consultas generales</li>
+        <li>Vacunación</li>
+        <li>Cirugías menores</li>
+        <li>Urgencias</li>
+      </ul>
+    </section>
+
+    <section class="appointment">
+      <h2>Agendar cita</h2>
+      <form id="appointmentForm">
+        <label>Nombre del dueño<br><input type="text" name="owner" required></label>
+        <label>Nombre de la mascota<br><input type="text" name="pet" required></label>
+        <label>Tipo de mascota<br>
+          <select name="type">
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </label>
+        <label>Fecha y hora<br><input type="datetime-local" name="datetime" required></label>
+        <label>Notas<br><textarea name="notes" rows="3"></textarea></label>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <h3>Citas agendadas</h3>
+      <ul id="appointmentsList"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Clínica Veterinaria La Patita — Tel: 55-1234-5678</div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
